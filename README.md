@@ -1,10 +1,10 @@
 # Using SSH with Azure AI Foundry's Compute Instances
 
-Azure AI Foundry is a cloud-based platform that simplifies the development, deployment and management of artificial intelligence (AI) solutions. It provides a variety of tools and services to help you build, train and deploy AI models. One of the key components of Azure AI Foundry is compute instances. These are virtual machines that you can use to train and run your AI models.
+[Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/) is a cloud-based platform that simplifies the development, deployment and management of artificial intelligence (AI) solutions. It provides a variety of tools and services to help you build, train and deploy AI models. One of the key components of Azure AI Foundry is compute instances. These are virtual machines that you can use to train and run your AI models.
 
 This document provides instructions on how to use SSH to connect to Azure AI Foundry's compute instances. There are two methods for connecting: through a public network or through a private network.
 
-## Table of Contents
+## Table of Contents:
 * [Configuring SSH environment](#configuring-ssh-environment)
 * [Connecting through public network](#connecting-through-public-network)
 * [Connecting through private network](#connecting-through-private-network)
@@ -14,7 +14,8 @@ This document provides instructions on how to use SSH to connect to Azure AI Fou
 ``` bash
 az sshkey create --name "AIFoundrySSHKey" --resource-group <Resource_Group_Name>
 ```
-> **Note:** Replace `<Resource_Group_Name>` with the name of your Azure resource group.
+> [!Note:]
+> Replace `<Resource_Group_Name>` with the name of your Azure resource group.
 2. During Compute Instance creation, select "Enable SSH Access", then "Use existing public key stored in Azure" and select the public key stored in Azure.**
 
 ## Connecting through public network
