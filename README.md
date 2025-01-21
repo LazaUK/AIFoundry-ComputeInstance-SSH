@@ -14,7 +14,7 @@ This document provides instructions on how to use SSH to connect to Azure AI Fou
 ``` bash
 az sshkey create --name "AIFoundrySSHKey" --resource-group <Resource_Group_Name>
 ```
-> [!Note:]
+> [!NOTE]
 > Replace `<Resource_Group_Name>` with the name of your Azure resource group.
 2. During Compute Instance creation, select "Enable SSH Access", then "Use existing public key stored in Azure" and select the public key stored in Azure.**
 
