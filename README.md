@@ -27,7 +27,7 @@ az ml compute connect-ssh --name <Compute_Instance_Name> --resource-group <Resou
 > [!NOTE]
 > Replace the following placeholders with the appropriate values:
 >    *   `<Compute_Instance_Name>`: The name of your Azure AI Foundry compute instance.
->    *   `<Resource_Group_Name>`: The name of the resource group that contains your compute instance.
+>    *   `<Resource_Group_Name>`: The name of the resource group that contains your Azure AI Foundry resource.
 >    *   `<AI_Foundry_Name>`: The name of your Azure AI Foundry workspace.
 >    *   `<Path_to_Private_Key>`: The path to your private SSH key file on your local machine.
 
@@ -46,7 +46,7 @@ az ml compute connect-ssh --name <Compute_Instance_Name> --resource-group <Resou
 > [!NOTE]
 > Replace the following placeholders with the appropriate values:
 >    *   `<Compute_Instance_Name>`: The name of your Azure AI Foundry compute instance.
->    *   `<Resource_Group_Name>`: The name of the resource group that contains your compute instance.
+>    *   `<Resource_Group_Name>`: The name of the resource group that contains your Azure AI Foundry resource.
 >    *   `<AI_Foundry_Name>`: The name of your Azure AI Foundry workspace.
 >    *   `<Path_to_Private_Key>`: The path to your private SSH key file on your Azure VM.
 
