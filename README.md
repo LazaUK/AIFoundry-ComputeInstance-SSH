@@ -16,18 +16,19 @@ az sshkey create --name "AIFoundrySSHKey" --resource-group <Resource_Group_Name>
 ```
 > [!NOTE]
 > Replace `<Resource_Group_Name>` with the name of your Azure resource group.
-2. During Compute Instance creation, select "Enable SSH Access", then "Use existing public key stored in Azure" and select the public key stored in Azure.**
+2. During Compute Instance creation, select "Enable SSH Access", then "Use existing public key stored in Azure" and select the public key stored in Azure.
 
 ## Connecting through public network
-1.  **From your local machine, execute the following Az CLI command:**
+1.  From your local machine, execute the following Az CLI command:
 ``` bash
 az ml compute connect-ssh --name <Compute_Instance_Name> --resource-group <Resource_Group_Name> --workspace-name <AI_Foundry_Name> --private-key-file-path <Path_to_Private_Key>
 ```
-> **Note:** Replace the following placeholders with the appropriate values:
-    *   `<Compute_Instance_Name>`: The name of your Azure AI Foundry compute instance.
-    *   `<Resource_Group_Name>`: The name of the resource group that contains your compute instance.
-    *   `<AI_Foundry_Name>`: The name of your Azure AI Foundry workspace.
-    *   `<Path_to_Private_Key>`: The path to your private SSH key file on your local machine.
+> [!NOTE]
+> Replace the following placeholders with the appropriate values:
+>    *   `<Compute_Instance_Name>`: The name of your Azure AI Foundry compute instance.
+>    *   `<Resource_Group_Name>`: The name of the resource group that contains your compute instance.
+>    *   `<AI_Foundry_Name>`: The name of your Azure AI Foundry workspace.
+>    *   `<Path_to_Private_Key>`: The path to your private SSH key file on your local machine.
 
 ## Connecting through private network
 
