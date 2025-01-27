@@ -18,6 +18,16 @@ az sshkey create --name "AIFoundrySSHKey" --resource-group <Resource_Group_Name>
 > Replace `<Resource_Group_Name>` with the name of your Azure resource group.
 2. During Compute Instance creation, select "Enable SSH Access", then "Use existing public key stored in Azure" and select the public key stored in Azure.
 ![UI_SSH_Config](images/AIFoundry_SSH_Config.png)
+3. Optionally, you can create a new Compute Instance with disabled Public IP and enabled SSH using Azure CLI as shown below:
+``` bash
+az ml compute create --name <Compute_Instance_Name> --size <VM_SKU> --type ComputeInstance --resource-group <Resource_Group_Name> --workspace-name <AI_Foundry_Name> --enable-node-public-ip False --ssh-public-access-enabled True
+```
+> [!NOTE]
+> Replace the following placeholders with the appropriate values:
+>    *   `<Compute_Instance_Name>`: The name of your Azure AI Foundry compute instance.
+>    *   `<VM_SKU>`: The SKU (size) of Azure Virtual Machine.
+>    *   `<Resource_Group_Name>`: The name of the resource group that contains your Azure AI Foundry resource.
+>    *   `<AI_Foundry_Name>`: The name of your Azure AI Foundry workspace.
 
 ## Connecting through public network
 1.  From your local machine, execute the following Az CLI command:
