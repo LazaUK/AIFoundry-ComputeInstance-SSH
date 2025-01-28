@@ -44,7 +44,8 @@ az ml compute connect-ssh --name <Compute_Instance_Name> --resource-group <Resou
 ## Connecting through private network
 1. Enable Private Endpoint for Azure AI Foundry to a custom VNet.
 > [!WARNING]
-> Private Endpoint is a "**_must_**" requirement, if you want to disable compute instance's Public IP. The specific steps for enabling a Private Endpoint are beyond the scope of this document. Please refer to the [Azure AI Foundry's documentation](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/configure-private-link) for detailed instructions.
+> Private Endpoint is a "**_must_**" requirement, if you want to disable compute instance's Public IP.
+> The specific steps for enabling a Private Endpoint are beyond the scope of this document. Please refer to the [Azure AI Foundry's documentation](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/configure-private-link) for detailed instructions.
 2.  Provision Azure VM in a custom VNet and install Az CLI. For Ubuntu-based VM, the installation of Az CLI may require execution of these commands:
 ``` bash
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash 
